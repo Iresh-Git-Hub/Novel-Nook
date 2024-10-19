@@ -7,7 +7,8 @@ import javafx.scene.layout.AnchorPane;
 import lk.edu.novelnook.novelnook.util.CallFxmlFiles;
 
 public class LoginController {
-    public AnchorPane loginPane;
+    @FXML
+    private AnchorPane loginPane;
 
     public void gotoRegisterPage(ActionEvent actionEvent) {
         this.loginPane.getScene().getWindow().hide();

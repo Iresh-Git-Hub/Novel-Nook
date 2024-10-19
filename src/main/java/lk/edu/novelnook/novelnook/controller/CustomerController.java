@@ -25,7 +25,6 @@ public class CustomerController {
     void saveCustomer(ActionEvent event) throws Exception{
         CustomerDto customerDto = new CustomerDto(idText.getText(), nameText.getText(), addressText.getText(), contactText.getText());
         boolean isSaved  = cusomerModel.saveCustomer(customerDto);
-
         if (isSaved) {
             new Alert(Alert.AlertType.INFORMATION, "Customer Saved").show();
         }else {
