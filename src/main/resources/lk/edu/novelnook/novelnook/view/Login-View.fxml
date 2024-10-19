@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="692.0" prefWidth="1073.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.edu.novelnook.novelnook.controller.auth.LoginController">
+   <children>
+      <ImageView fitHeight="915.0" fitWidth="942.0" layoutX="-116.0" layoutY="-115.0" opacity="0.08" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 45;">
+         <image>
+            <Image url="@../../../../../images/logo (1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="267.0" fitWidth="164.0" layoutX="505.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../images/hero-1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="303.0" fitWidth="248.0" layoutX="673.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../images/hero-5.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="262.0" fitWidth="164.0" layoutX="867.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../images/hero-2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="321.0" fitWidth="189.0" layoutX="673.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../images/hero-6.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="303.0" fitWidth="163.0" layoutX="868.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../images/hero-4.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="262.0" fitWidth="164.0" layoutX="505.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../images/hero-3.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="28.0" layoutX="23.0" layoutY="22.0" onMouseClicked="#backMethod" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../images/back.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="178.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../images/logo (1).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="96.0" layoutY="127.0" text="Welcome Back !">
+         <font>
+            <Font name="Forte" size="48.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="96.0" layoutY="523.0" onAction="#gotoHomePage" prefHeight="48.0" prefWidth="327.0" style="-fx-background-color: #000;" text="Sign In" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="96.0" layoutY="322.0" text="Username or Email">
+         <font>
+            <Font name="Segoe UI" size="13.0" />
+         </font>
+      </Label>
+      <TextField layoutX="96.0" layoutY="340.0" prefHeight="48.0" prefWidth="327.0" promptText="Username or Email" style="-fx-background-color: #f9fafb; -fx-border-color: #e5e7eb; -fx-border-radius: 8; -fx-background-radius: 8;" />
+      <Label layoutX="96.0" layoutY="398.0" text="Enter Password">
+         <font>
+            <Font name="Segoe UI" size="13.0" />
+         </font>
+      </Label>
+      <PasswordField layoutX="96.0" layoutY="417.0" prefHeight="48.0" prefWidth="327.0" promptText="Password" style="-fx-background-color: #f9fafb; -fx-border-color: #e5e7eb; -fx-border-radius: 8; -fx-background-radius: 8;" />
+      <Label layoutX="93.0" layoutY="203.0" text="Welcome to NovelNook, your sanctuary for all things literature.">
+         <font>
+            <Font name="Segoe UI" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="93.0" layoutY="219.0" text="Whether you're a lover of thrillers, fantasy, romance, or classics,">
+         <font>
+            <Font name="Segoe UI" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="93.0" layoutY="234.0" text="we have something that will captivate your imagination. ">
+         <font>
+            <Font name="Segoe UI" size="10.0" />
+         </font>
+      </Label>
+      <RadioButton layoutX="97.0" layoutY="486.0" mnemonicParsing="false" text="Remeber Me" />
+      <Hyperlink layoutX="328.0" layoutY="483.0" onAction="#gotoUpdatePassword" text="Forget Password" />
+      <Label layoutX="97.0" layoutY="598.0" text="You haven't account ?" />
+      <Hyperlink layoutX="342.0" layoutY="595.0" onAction="#gotoRegisterPage" text="Sign Up Here" />
+      <Label layoutX="93.0" layoutY="265.0" text="Discover new worlds, uncover hidden gems, and let ">
+         <font>
+            <Font name="Segoe UI" size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="93.0" layoutY="281.0" text="your next great read find you at NovelNook. ">
+         <font>
+            <Font name="Segoe UI" size="10.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="closeButton" fitHeight="28.0" fitWidth="60.0" layoutX="1030.0" layoutY="31.0" onMouseClicked="#closeWindow" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../images/close.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
