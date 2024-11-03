@@ -17,7 +17,7 @@
 
 <AnchorPane prefHeight="643.0" prefWidth="848.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.novelnook.controller.LoginController">
    <children>
-      <AnchorPane fx:id="loginPane" layoutX="20.0" layoutY="22.0" prefHeight="596.0" prefWidth="807.0" style="-fx-background-color: #fff; -fx-background-radius: 20; -fx-border-radius: 20;">
+      <AnchorPane fx:id="loginPane" layoutX="20.0" layoutY="22.0" prefHeight="596.0" prefWidth="807.0" style="-fx-background-color: #fff; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #f8fafc;">
          <children>
             <Line endX="-100.0" endY="536.4000244140625" layoutX="489.0" layoutY="17.0" opacity="0.16" startX="-100.0" startY="25.199996948242188" stroke="SILVER" />
             <ImageView fitHeight="518.0" fitWidth="394.0" layoutX="416.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
@@ -30,7 +30,7 @@
                   <Image url="@../images/logo.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="closeButton" fitHeight="24.0" fitWidth="16.0" layoutX="777.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="closeButton" fitHeight="24.0" fitWidth="16.0" layoutX="771.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/close-image.jpg" />
                </image>
