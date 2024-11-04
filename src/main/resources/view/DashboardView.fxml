@@ -3,20 +3,21 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.BoxBlur?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="688.0" prefWidth="922.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.novelnook.controller.DashboardController">
    <children>
       <AnchorPane prefHeight="688.0" prefWidth="922.0" style="-fx-background-color: #f5f5f5; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #000;">
          <children>
-            <AnchorPane layoutX="6.0" layoutY="6.0" prefHeight="675.0" prefWidth="234.0" style="-fx-background-color: #fff; -fx-background-radius: 20; -fx-border-radius: 20;" />
             <Pane layoutX="295.0" layoutY="54.0" prefHeight="238.0" prefWidth="574.0" style="-fx-background-color: #dbeafe; -fx-background-radius: 20; -fx-border-radius: 20;">
                <children>
-                  <ImageView fitHeight="272.0" fitWidth="332.0" layoutX="263.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="279.0" fitWidth="358.0" layoutX="245.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../images/image.png" />
                      </image>
@@ -54,6 +55,9 @@
                <image>
                   <Image url="@../images/close-image.png" />
                </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
             </ImageView>
             <Label layoutX="296.0" layoutY="23.0" text="Hi, Dear">
                <font>
@@ -75,6 +79,124 @@
                   <Font name="Segoe UI Bold" size="17.0" />
                </font>
             </Label>
+            <Circle fill="DODGERBLUE" layoutX="444.0" layoutY="405.0" radius="50.0" stroke="TRANSPARENT" strokeType="INSIDE">
+               <effect>
+                  <BoxBlur height="255.0" iterations="2" width="255.0" />
+               </effect>
+            </Circle>
+            <AnchorPane layoutX="6.0" layoutY="6.0" prefHeight="675.0" prefWidth="234.0" style="-fx-background-color: #fff; -fx-background-radius: 20; -fx-border-radius: 20;">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="145.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="93.0" layoutY="18.0" text="Novel">
+                     <font>
+                        <Font name="Forte" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="146.0" layoutY="18.0" text="Nook" textFill="#1d4ed8">
+                     <font>
+                        <Font name="Forte" size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXButton layoutX="10.0" layoutY="72.0" prefHeight="40.0" prefWidth="213.0" style="-fx-background-color: #fff; -fx-background-radius: 13; -fx-border-radius: 13;" text="Home">
+                     <font>
+                        <Font name="Segoe UI Bold" size="11.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <Pane layoutX="4.0" layoutY="505.0" prefHeight="166.0" prefWidth="226.0" style="-fx-background-color: #dbeafe; -fx-background-radius: 20; -fx-border-radius: 20;">
+                     <children>
+                        <ImageView fitHeight="238.0" fitWidth="224.0" layoutX="-3.0" layoutY="-68.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/dashboard-image.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="21.0" layoutY="129.0" text="Try all features for your shop free">
+                           <font>
+                              <Font name="Segoe UI" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+            <Pane layoutX="311.0" layoutY="344.0" prefHeight="326.0" prefWidth="175.0" style="-fx-background-color: #fff; -fx-background-radius: 10; -fx-border-radius: 10;">
+               <children>
+                  <ImageView fitHeight="250.0" fitWidth="162.0" layoutX="9.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/book-1.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="11.0" layoutY="265.0" text="YOUNG WIZARD">
+                     <font>
+                        <Font name="Segoe UI Bold" size="13.5" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="283.0" text="Aaron Loeb">
+                     <font>
+                        <Font name="Segoe UI" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="17.0" fitWidth="175.0" layoutX="9.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/rating-image.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="494.0" layoutY="344.0" prefHeight="326.0" prefWidth="175.0" style="-fx-background-color: #fff; -fx-background-radius: 10; -fx-border-radius: 10;">
+               <children>
+                  <ImageView fitHeight="250.0" fitWidth="162.0" layoutX="9.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/book-2.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="11.0" layoutY="265.0" text="CONQUEST OF FLAMES">
+                     <font>
+                        <Font name="Segoe UI Bold" size="13.5" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="283.0" text="Shawn Garcia">
+                     <font>
+                        <Font name="Segoe UI" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="17.0" fitWidth="175.0" layoutX="9.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/rating-image.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="678.0" layoutY="344.0" prefHeight="326.0" prefWidth="175.0" style="-fx-background-color: #fff; -fx-background-radius: 10; -fx-border-radius: 10;">
+               <children>
+                  <ImageView fitHeight="250.0" fitWidth="162.0" layoutX="9.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/book-3.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="11.0" layoutY="265.0" text="CYBERNETIC STARGAZER">
+                     <font>
+                        <Font name="Segoe UI Bold" size="13.5" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="283.0" text="Shawn Garcia">
+                     <font>
+                        <Font name="Segoe UI" size="13.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="17.0" fitWidth="175.0" layoutX="9.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/rating-image.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
          </children>
       </AnchorPane>
    </children>

@@ -30,7 +30,7 @@
                 </ImageView>
                 <ImageView fx:id="closeButton" fitHeight="24.0" fitWidth="16.0" layoutX="771.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@../images/close-image.jpg" />
+                        <Image url="@../images/close-image.png" />
                     </image>
                     <cursor>
                         <Cursor fx:constant="HAND" />
