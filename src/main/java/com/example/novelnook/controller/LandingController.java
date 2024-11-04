@@ -43,36 +43,20 @@ public class LandingController implements Initializable {
 
         // Navigate to the Login View
         this.signinButton.setOnAction(event -> {
-
             try {
                 new WindowUtils().getLikeModel(closeButton,"LoginView");
             } catch (Exception e) {
                 e.printStackTrace();
             }
-//            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/LoginView.fxml"));
-//            Parent load = null;
-//            try {
-//                load = loader.load();
-//            } catch (Exception e) {
-//                e.printStackTrace();
-//            }
-//
-//            Scene scene = new Scene(load);
-//            scene.setFill(Color.TRANSPARENT);
-//
-//            Stage stage = new Stage();
-//            stage.initStyle(StageStyle.UNDECORATED);
-//            stage.setScene(scene);
-//            stage.initModality(Modality.APPLICATION_MODAL);
-//
-//            Window window = this.closeButton.getScene().getWindow();
-//            stage.initOwner(window);
-//            stage.showAndWait();
         });
 
         // Navigate to the Register View
         signupButton.setOnAction(event -> {
-            System.out.println("Click the sign up button");
+            try {
+                new WindowUtils().getLikeModel(closeButton,"RegisterView");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         });
     }
 }
