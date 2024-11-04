@@ -10,6 +10,7 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.WindowEvent;
 
 import java.io.IOException;
 import java.net.URL;
@@ -45,5 +46,9 @@ public class LoginController implements Initializable {
             loginPane.getScene().getWindow().hide();
         });
 
+        this.loginButton.setOnAction(event -> {
+            this.loginPane.getScene().getWindow().hide();
+            new WindowUtils().setWindow("DashboardView");
+        });
     }
 }
