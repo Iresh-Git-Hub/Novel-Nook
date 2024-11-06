@@ -24,7 +24,7 @@ public class LandingController implements Initializable {
     private ImageView closeButton;
 
     @FXML
-    private AnchorPane mainPane;
+    public AnchorPane mainPane;
 
     @FXML
     private JFXButton signinButton;

@@ -39,6 +39,7 @@ public class LoginController implements Initializable {
     @FXML
     private ImageView closeButton;
 
+    private final LandingController controller = new LandingController();
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         // close the window
@@ -48,6 +49,7 @@ public class LoginController implements Initializable {
 
         this.loginButton.setOnAction(event -> {
             this.loginPane.getScene().getWindow().hide();
+            controller.mainPane.getScene().getWindow().hide();
             new WindowUtils().setWindow("DashboardView");
         });
     }

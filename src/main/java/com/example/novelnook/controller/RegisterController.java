@@ -40,6 +40,8 @@ public class RegisterController implements Initializable {
         this.closeButton.setOnMouseClicked(event -> {
             this.registerPane.getScene().getWindow().hide();
         });
+
+        // register buton click method
     }
 
 }

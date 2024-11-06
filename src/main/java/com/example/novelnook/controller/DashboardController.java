@@ -1,10 +1,12 @@
 package com.example.novelnook.controller;
 
+import com.example.novelnook.utils.WindowUtils;
 import com.jfoenix.controls.JFXButton;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.image.ImageView;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -22,7 +24,11 @@ public class DashboardController implements Initializable {
         });
 
         this.addNewBookButton.setOnAction(event -> {
-            System.out.println("Click the addNewBookButton");
+            try {
+                new WindowUtils().getLikeModel(closeButton,"BookView");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         });
     }
 }
