@@ -2,12 +2,16 @@ package com.example.novelnook.controller;
 
 import com.example.novelnook.utils.WindowUtils;
 import com.jfoenix.controls.JFXButton;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
@@ -16,8 +20,7 @@ import java.util.ResourceBundle;
 
 public class RegisterController implements Initializable {
 
-    @FXML
-    private ImageView closeButton;
+    public Hyperlink gotoLoginView;
 
     @FXML
     private TextField emailText;
@@ -34,14 +37,16 @@ public class RegisterController implements Initializable {
     @FXML
     private TextField usernameText;
 
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        // close the window
-        this.closeButton.setOnMouseClicked(event -> {
-            this.registerPane.getScene().getWindow().hide();
-        });
-
-        // register buton click method
     }
 
+    public void gotoLoginView(ActionEvent actionEvent) {
+        new WindowUtils().navigateTo(registerPane,"LoginView");
+    }
+
+    public void closeWindow(MouseEvent mouseEvent) {
+        this.registerPane.getScene().getWindow().hide();
+    }
 }

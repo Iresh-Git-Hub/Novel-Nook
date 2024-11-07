@@ -2,108 +2,87 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.effect.BoxBlur?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="643.0" prefWidth="848.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.novelnook.controller.RegisterController">
-    <children>
-        <AnchorPane fx:id="registerPane" layoutX="20.0" layoutY="22.0" prefHeight="596.0" prefWidth="807.0" style="-fx-background-color: #fff; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #f8fafc;">
-            <children>
-                <Line endX="-100.0" endY="536.4000244140625" layoutX="489.0" layoutY="17.0" opacity="0.16" startX="-100.0" startY="25.199996948242188" stroke="SILVER" />
-                <ImageView fitHeight="518.0" fitWidth="394.0" layoutX="416.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../images/login-and-register-image.png" />
-                    </image>
-                </ImageView>
-                <ImageView fitHeight="32.0" fitWidth="134.0" layoutX="31.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../images/logo.png" />
-                    </image>
-                </ImageView>
-                <ImageView fx:id="closeButton" fitHeight="24.0" fitWidth="16.0" layoutX="771.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../images/close-image.png" />
-                    </image>
-                    <cursor>
-                        <Cursor fx:constant="HAND" />
-                    </cursor>
-                </ImageView>
-                <Label layoutX="117.0" layoutY="35.0" text="Novel">
-                    <font>
-                        <Font name="Forte" size="25.0" />
-                    </font>
-                </Label>
-                <Label layoutX="183.0" layoutY="35.0" text="Nook" textFill="#1d4ed8">
-                    <font>
-                        <Font name="Forte" size="25.0" />
-                    </font>
-                </Label>
-                <Label layoutX="37.0" layoutY="101.0" text="Create Account !">
-                    <font>
-                        <Font name="Segoe UI Bold" size="18.0" />
-                    </font>
-                </Label>
-                <Label layoutX="38.0" layoutY="127.0" text="Hi">
-                    <font>
-                        <Font name="Segoe UI Emoji" size="14.0" />
-                    </font>
-                </Label>
-                <Circle fill="DODGERBLUE" layoutX="506.0" layoutY="195.0" radius="58.0" stroke="TRANSPARENT" strokeType="INSIDE">
-                    <effect>
-                        <BoxBlur height="255.0" iterations="3" width="255.0" />
-                    </effect>
-                </Circle>
-                <Label layoutX="307.0" layoutY="572.0" text="\@ 2024 NovelNook | All Rights Reserved." />
-                <Label layoutX="38.0" layoutY="190.0" text="Email Address" />
-                <Label layoutX="38.0" layoutY="354.0" text="Create Password" />
-                <Circle fill="DODGERBLUE" layoutX="307.0" layoutY="407.0" radius="58.0" stroke="TRANSPARENT" strokeType="INSIDE">
-                    <effect>
-                        <BoxBlur height="255.0" iterations="3" width="255.0" />
-                    </effect>
-                </Circle>
-                <ImageView fitHeight="18.0" fitWidth="67.0" layoutX="59.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../images/imoji-image.png" />
-                    </image>
-                </ImageView>
-                <ImageView fitHeight="18.0" fitWidth="67.0" layoutX="90.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../images/imoji-image.png" />
-                    </image>
-                </ImageView>
-                <ImageView fitHeight="18.0" fitWidth="67.0" layoutX="123.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../images/imoji-image.png" />
-                    </image>
-                </ImageView>
-                <TextField fx:id="emailText" layoutX="37.0" layoutY="213.0" prefHeight="50.0" prefWidth="314.0" promptText="sample12@email.com" style="-fx-border-radius: 7; -fx-border-color: #e2e8f0; -fx-background-radius: 7; -fx-background-color: #f8fafc; -fx-padding: 0 15;">
-                    <font>
-                        <Font name="Segoe UI" size="12.0" />
-                    </font></TextField>
-                <PasswordField fx:id="passwordText" layoutX="37.0" layoutY="376.0" prefHeight="50.0" prefWidth="314.0" promptText="sample123" style="-fx-border-radius: 7; -fx-background-radius: 7; -fx-background-color: #f8fafc; -fx-border-color: #e2e8f0; -fx-padding: 0 15;" />
-                <JFXButton fx:id="registerButton" layoutX="37.0" layoutY="457.0" prefHeight="50.0" prefWidth="314.0" style="-fx-background-color: #1d4ed8; -fx-border-radius: 7; -fx-background-radius: 7;" text="Sign Up" textFill="WHITE">
-                    <font>
-                        <Font name="Segoe UI Bold" size="14.0" />
-                    </font>
-                    <cursor>
-                        <Cursor fx:constant="HAND" />
-                    </cursor>
-                </JFXButton>
-            <Label layoutX="38.0" layoutY="271.0" text="Create Username" />
-            <TextField fx:id="usernameText" layoutX="37.0" layoutY="294.0" prefHeight="50.0" prefWidth="314.0" promptText="Sample123" style="-fx-border-radius: 7; -fx-border-color: #e2e8f0; -fx-background-radius: 7; -fx-background-color: #f8fafc; -fx-padding: 0 15;">
-               <font>
-                  <Font name="Segoe UI" size="12.0" />
-               </font>
-            </TextField>
-            </children>
-        </AnchorPane>
-    </children>
+<AnchorPane fx:id="registerPane" prefHeight="558.0" prefWidth="466.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.novelnook.controller.RegisterController">
+   <children>
+      <ImageView fitHeight="20.0" fitWidth="53.0" layoutX="434.0" layoutY="14.0" onMouseClicked="#closeWindow" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/close-image.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="75.0" layoutX="206.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="105.0" layoutY="73.0" text="Welcome to NovelNook !">
+         <font>
+            <Font name="Gabarito Regular" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="109.0" text="Register to create account and start increase the sales" textFill="#8e8e8e">
+         <font>
+            <Font name="Gabarito Regular" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="191.0" layoutY="128.0" text="NovelNook." textFill="#8e8e8e">
+         <font>
+            <Font name="Gabarito Regular" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="166.0" style="-fx-font-weight: 800;" text="Username" textFill="#080808">
+         <font>
+            <Font name="Gabarito Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="314.0" style="-fx-font-weight: 800;" text="Password" textFill="#080808">
+         <font>
+            <Font name="Gabarito Regular" size="13.0" />
+         </font>
+      </Label>
+      <TextField layoutX="77.0" layoutY="189.0" prefHeight="41.0" prefWidth="306.0" style="-fx-background-color: #e5e5e5; -fx-background-radius: 8; -fx-border-radius: 8; -fx-padding: 0 15;" />
+      <PasswordField layoutX="77.0" layoutY="337.0" prefHeight="42.0" prefWidth="306.0" style="-fx-background-color: #e5e5e5; -fx-background-radius: 8; -fx-border-radius: 8; -fx-padding: 0 15;" />
+      <JFXButton layoutX="79.0" layoutY="403.0" prefHeight="42.0" prefWidth="306.0" style="-fx-background-color: #000; -fx-border-radius: 20; -fx-background-radius: 20;" text="Create Account" textFill="WHITE">
+         <font>
+            <Font name="Gabarito Regular" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Line endX="202.0" endY="-3.0517578125E-5" layoutX="180.0" layoutY="476.0" startX="-100.0" stroke="#e5e5e5" />
+      <Label alignment="CENTER" layoutX="178.0" layoutY="466.0" prefHeight="16.0" prefWidth="110.0" style="-fx-background-color: #fff;" text="Or login with">
+         <font>
+            <Font name="Gabarito Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="81.0" layoutY="503.0" prefHeight="18.0" prefWidth="186.0" style="-fx-background-color: #fff;" text="Yo u have already an account ?">
+         <font>
+            <Font name="Gabarito Regular" size="13.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="305.0" layoutY="500.0" onAction="#gotoLoginView" text="Sign in Here">
+         <font>
+            <Font name="Gabarito Regular" size="13.0" />
+         </font>
+      </Hyperlink>
+      <Label layoutX="79.0" layoutY="242.0" style="-fx-font-weight: 800;" text="Email Address" textFill="#080808">
+         <font>
+            <Font name="Gabarito Regular" size="13.0" />
+         </font>
+      </Label>
+      <TextField layoutX="78.0" layoutY="265.0" prefHeight="41.0" prefWidth="306.0" style="-fx-background-color: #e5e5e5; -fx-background-radius: 8; -fx-border-radius: 8; -fx-padding: 0 15;" />
+   </children>
 </AnchorPane>

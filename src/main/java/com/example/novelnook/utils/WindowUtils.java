@@ -1,10 +1,13 @@
 package com.example.novelnook.utils;
 
 import com.jfoenix.controls.JFXButton;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -69,5 +72,28 @@ public class WindowUtils {
         Window window = closeButton.getScene().getWindow();
         stage.initOwner(window);
         stage.showAndWait();
+    }
+
+    public void navigateTo(AnchorPane content,String fxmlPath) {
+        try {
+            content.getChildren().clear();
+            AnchorPane load = FXMLLoader.load(getClass().getResource("/view/"+fxmlPath+".fxml"));
+
+//  -------- Loaded anchor edges are bound to the content anchor --------
+//      (1) Bind the loaded FXML to all edges of the content anchorPane
+            load.prefWidthProperty().bind(content.widthProperty());
+            load.prefHeightProperty().bind(content.heightProperty());
+
+//      (2) Bind the loaded FXML to all edges of the AnchorPane
+//            AnchorPane.setTopAnchor(load, 0.0);
+//            AnchorPane.setRightAnchor(load, 0.0);
+//            AnchorPane.setBottomAnchor(load, 0.0);
+//            AnchorPane.setLeftAnchor(load, 0.0);
+
+            content.getChildren().add(load);
+        } catch (IOException e) {
+            e.printStackTrace();
+            new Alert(Alert.AlertType.ERROR, "Fail to load page!").show();
+        }
     }
 }

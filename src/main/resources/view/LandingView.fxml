@@ -14,7 +14,7 @@
    <children>
       <AnchorPane fx:id="mainPane" layoutX="3.0" layoutY="3.0" prefHeight="666.0" prefWidth="910.0" style="-fx-background-color: #fff; -fx-border-radius: 20; -fx-background-radius: 20;">
          <children>
-            <ImageView fx:id="closeButton" fitHeight="24.0" fitWidth="16.0" layoutX="874.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="closeButton" fitHeight="24.0" fitWidth="16.0" layoutX="874.0" layoutY="14.0" onMouseClicked="#closeWindow" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/close-image.png" />
                </image>
@@ -22,29 +22,29 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </ImageView>
-            <Label layoutX="123.0" layoutY="53.0" text="Novel">
+            <Label layoutX="93.0" layoutY="53.0" text="Novel">
                <font>
                   <Font name="Forte" size="25.0" />
                </font>
             </Label>
-            <Label layoutX="188.0" layoutY="53.0" style="-fx-background-color: #fff;" text="Nook" textFill="#1d4ed8">
+            <Label layoutX="158.0" layoutY="53.0" style="-fx-background-color: #fff;" text="Nook" textFill="ORANGE">
                <font>
                   <Font name="Forte" size="25.0" />
                </font>
             </Label>
-            <Label layoutX="217.0" layoutY="223.0" prefHeight="38.0" prefWidth="206.0" style="-fx-background-color: #fff;" text="Discover Your ">
+            <Label layoutX="217.0" layoutY="225.0" prefHeight="38.0" prefWidth="206.0" style="-fx-background-color: #fff;" text="Discover Your ">
                <font>
-                  <Font name="Segoe UI Bold" size="30.0" />
+                  <Font name="Gabarito Regular" size="30.0" />
                </font>
             </Label>
-            <Label layoutX="506.0" layoutY="223.0" style="-fx-background-color: #fff;" text="Favorite Book.">
+            <Label layoutX="492.0" layoutY="225.0" style="-fx-background-color: #fff;" text="Favorite Book.">
                <font>
-                  <Font name="Segoe UI Bold" size="30.0" />
+                  <Font name="Gabarito Regular" size="30.0" />
                </font>
             </Label>
-            <Label layoutX="426.0" layoutY="223.0" style="-fx-background-color: #fff;" text="Next" textFill="#1d4ed8">
+            <Label layoutX="412.0" layoutY="225.0" style="-fx-background-color: #fff;" text="Next" textFill="ORANGE">
                <font>
-                  <Font name="Segoe UI Bold" size="30.0" />
+                  <Font name="Gabarito Regular" size="30.0" />
                </font>
             </Label>
             <Label layoutX="195.0" layoutY="319.0" style="-fx-background-color: #fff;" text="a poetry enthusiast, we've got you covered. Come, explore, and get lost in the pages with us.">
@@ -67,22 +67,22 @@
                   <Font name="Segoe UI" size="13.0" />
                </font>
             </Label>
-            <Circle fill="#1f93ff" layoutX="306.0" layoutY="463.0" radius="50.0" stroke="TRANSPARENT" strokeType="INSIDE">
+            <Circle fill="ORANGE" layoutX="306.0" layoutY="463.0" radius="50.0" stroke="TRANSPARENT" strokeType="INSIDE">
                <effect>
                   <BoxBlur height="255.0" iterations="3" width="255.0" />
                </effect>
             </Circle>
-            <Circle fill="#1f93ff" layoutX="615.0" layoutY="183.0" radius="50.0" stroke="TRANSPARENT" strokeType="INSIDE">
+            <Circle fill="ORANGE" layoutX="615.0" layoutY="183.0" radius="50.0" stroke="TRANSPARENT" strokeType="INSIDE">
                <effect>
                   <BoxBlur height="255.0" iterations="3" width="255.0" />
                </effect>
             </Circle>
-            <ImageView fitHeight="641.0" fitWidth="582.0" layoutX="326.0" layoutY="32.0" opacity="0.11" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="636.0" fitWidth="592.0" layoutX="328.0" layoutY="32.0" opacity="0.11" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/hero-image.png" />
                </image>
             </ImageView>
-            <JFXButton fx:id="signupButton" layoutX="472.0" layoutY="367.0" prefHeight="55.0" prefWidth="152.0" style="-fx-background-radius: 7; -fx-border-radius: 7; -fx-background-color: #1d4ed8;" text="Sign Up" textFill="WHITE">
+            <JFXButton fx:id="signupButton" layoutX="472.0" layoutY="367.0" prefHeight="55.0" prefWidth="152.0" style="-fx-background-radius: 7; -fx-border-radius: 7; -fx-background-color: #000;" text="Sign Up" textFill="WHITE">
                <font>
                   <Font name="Segoe UI Bold" size="14.0" />
                </font>
@@ -91,7 +91,7 @@
                </cursor>
             </JFXButton>
             <Label layoutX="351.0" layoutY="652.0" text="\@ 2024 NovelNook | All Rights Reserved." />
-            <JFXButton fx:id="signinButton" layoutX="297.0" layoutY="367.0" prefHeight="55.0" prefWidth="152.0" ripplerFill="#efefef" style="-fx-border-color: #1d4ed8; -fx-border-width: 2; -fx-background-radius: 7; -fx-border-radius: 7; -fx-background-color: #fff;" text="Sign In" textFill="#1d4ed8">
+            <JFXButton fx:id="signinButton" layoutX="297.0" layoutY="367.0" prefHeight="55.0" prefWidth="152.0" ripplerFill="#efefef" style="-fx-border-color: #000; -fx-border-width: 2; -fx-background-radius: 7; -fx-border-radius: 7; -fx-background-color: #fff;" text="Sign In">
                <font>
                   <Font name="Segoe UI Bold" size="14.0" />
                </font>
