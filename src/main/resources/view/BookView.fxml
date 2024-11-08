@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="620.0" prefWidth="690.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.novelnook.controller.BookController">
+   <children>
+      <AnchorPane layoutX="33.0" layoutY="50.0" prefHeight="209.0" prefWidth="623.0" style="-fx-background-color: #f5f5f5; -fx-background-radius: 20; -fx-border-radius: 20;">
+         <children>
+            <ImageView fitHeight="275.0" fitWidth="336.0" layoutX="273.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-29.983328247070318" AnchorPane.rightAnchor="14.200000000000045">
+               <image>
+                  <Image url="@../images/image.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="24.0" fitWidth="33.0" layoutX="92.0" layoutY="-34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/hand-image.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="41.0" layoutY="30.0" text="Upload your book">
+               <font>
+                  <Font name="Gabarito Regular" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="51.0" text="to increase your sales.">
+               <font>
+                  <Font name="Gabarito Regular" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="43.0" layoutY="93.0" text="Enagage your shop book with this dashboard">
+               <font>
+                  <Font name="Gabarito Regular" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="43.0" layoutY="107.0" text="and makes sales everyday to your shop.">
+               <font>
+                  <Font name="Gabarito Regular" size="12.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="42.0" layoutY="142.0" onAction="#openAddNewBookModel" prefHeight="38.0" prefWidth="119.0" style="-fx-background-color: #000; -fx-background-radius: 10; -fx-border-radius: 10;" text="Add new book" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="16.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/plus-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Label layoutX="47.0" layoutY="20.0" text="Hi , Dear">
+         <font>
+            <Font name="Gabarito Regular" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="24.0" fitWidth="33.0" layoutX="164.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/fire-image.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="47.0" layoutY="286.0" text="Popular Now">
+         <font>
+            <Font name="Gabarito Regular" size="20.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="34.0" layoutY="317.0" prefHeight="282.0" prefWidth="150.0" style="-fx-background-color: #f5f5f5; -fx-border-radius: 5; -fx-background-radius: 5;">
+         <children>
+            <ImageView fitHeight="223.0" fitWidth="176.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/book-1.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="5.0" layoutY="232.0" text="YOUNG WIZARD">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="6.0" layoutY="246.0" text="Aaron Loeb">
+               <font>
+                  <Font name="Segoe UI" size="10.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="24.0" fitWidth="95.0" layoutX="2.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/rating-image.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="194.0" layoutY="317.0" prefHeight="282.0" prefWidth="150.0" style="-fx-background-color: #f5f5f5; -fx-border-radius: 5; -fx-background-radius: 5;">
+         <children>
+            <ImageView fitHeight="223.0" fitWidth="176.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/book-2.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="5.0" layoutY="232.0" text="CONQUEST OF FLAMES">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="6.0" layoutY="246.0" text="Shawn Garcia">
+               <font>
+                  <Font name="Segoe UI" size="10.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="24.0" fitWidth="95.0" layoutX="2.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/rating-image.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="354.0" layoutY="317.0" prefHeight="282.0" prefWidth="150.0" style="-fx-background-color: #f5f5f5; -fx-border-radius: 5; -fx-background-radius: 5;">
+         <children>
+            <ImageView fitHeight="223.0" fitWidth="176.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/book-3.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="5.0" layoutY="232.0" text="CYBERNETIC STARGAZER">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="6.0" layoutY="246.0" text="Shawn Garcia">
+               <font>
+                  <Font name="Segoe UI" size="10.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="24.0" fitWidth="95.0" layoutX="2.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/rating-image.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="514.0" layoutY="317.0" prefHeight="282.0" prefWidth="150.0" style="-fx-background-color: #f5f5f5; -fx-border-radius: 5; -fx-background-radius: 5;">
+         <children>
+            <ImageView fitHeight="223.0" fitWidth="176.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/book-4.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="5.0" layoutY="232.0" text="IN YOUR EYES">
+               <font>
+                  <Font name="Segoe UI Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="6.0" layoutY="246.0" text="Margeret Perez">
+               <font>
+                  <Font name="Segoe UI" size="10.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="24.0" fitWidth="95.0" layoutX="2.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/rating-image.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

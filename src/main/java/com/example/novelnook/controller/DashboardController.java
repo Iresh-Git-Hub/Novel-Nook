@@ -6,6 +6,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
@@ -22,14 +23,18 @@ public class DashboardController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-      //  new WindowUtils().navigateTo(mainPane,"BookView");
+        new WindowUtils().navigateTo(mainPane,"BookView");
     }
 
     public void gotoPageOne(ActionEvent actionEvent) {
-        new WindowUtils().navigateTo(mainPane,"LoginView");
+        new WindowUtils().navigateTo(mainPane,"BookView");
     }
 
     public void gotoPage2(ActionEvent actionEvent) {
-        new WindowUtils().navigateTo(mainPane,"RegisterView");
+        new WindowUtils().navigateTo(mainPane,"CustomerView");
+    }
+
+    public void closeWindow(MouseEvent mouseEvent) {
+        this.homePane.getScene().getWindow().hide();
     }
 }

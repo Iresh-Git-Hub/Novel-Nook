@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="620.0" prefWidth="690.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.novelnook.controller.CustomerController">
+   <children>
+      <Label layoutX="216.0" layoutY="146.0" text="Customer" />
+   </children>
+</AnchorPane>
