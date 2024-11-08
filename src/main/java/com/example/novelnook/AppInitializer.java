@@ -11,7 +11,7 @@ import java.io.IOException;
 public class AppInitializer extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-       new WindowUtils().setWindow("LandingView");
+       new WindowUtils().setWindow("DashboardView");
     }
 
     public static void main(String[] args) {

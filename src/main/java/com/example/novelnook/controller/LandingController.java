@@ -18,7 +18,7 @@ public class LandingController implements Initializable {
     public JFXButton signupButton;
     public JFXButton signinButton;
     public AnchorPane mainPane;
-public ImageView closeButton;
+    public ImageView closeButton;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
