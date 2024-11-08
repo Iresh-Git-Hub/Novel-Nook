@@ -6,6 +6,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
 import java.net.URL;
@@ -14,15 +15,21 @@ import java.util.ResourceBundle;
 public class DashboardController implements Initializable {
 
     public ImageView closeButton;
+    public AnchorPane homePane;
+    public AnchorPane mainPane;
     @FXML
     private JFXButton addNewBookButton;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
+      //  new WindowUtils().navigateTo(mainPane,"BookView");
     }
 
-    public void openAddNewBookModel(ActionEvent actionEvent) throws IOException {
-        new WindowUtils().getLikeModel(closeButton,"BookView");
+    public void gotoPageOne(ActionEvent actionEvent) {
+        new WindowUtils().navigateTo(mainPane,"LoginView");
+    }
+
+    public void gotoPage2(ActionEvent actionEvent) {
+        new WindowUtils().navigateTo(mainPane,"RegisterView");
     }
 }
